@@ -1,0 +1,121 @@
+
+
+.quizmain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .quizcompli {
+    width: 80%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Divide into 2 columns */
+    grid-gap: 20px; /* Add space between grid items */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .quizcategory {
+    grid-column: 1; /* Place this in the first column */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .quizcategory p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .quizcategory button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+  }
+  
+  .quizcategory button:hover {
+    background-color: #0056b3;
+  }
+  
+  .quizsummary {
+    grid-column: 2; /* Place this in the second column */
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quizsummary h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-align: center;
+  }
+  
+  .quizsummary p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .quizsummary .loading {
+    font-size: 20px;
+    color: #007BFF;
+    text-align: center;
+  }
+  
+  .quizsummary button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .quizsummary button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .quizcompli {
+      width: 90%;
+      height: auto;
+      grid-template-columns: 1fr; /* Stack the elements vertically */
+      grid-template-rows: auto auto;
+    }
+  
+    .quizcategory {
+      grid-column: 1 / -1;
+      margin-bottom: 20px;
+    }
+  
+    .quizsummary {
+      grid-column: 1 / -1;
+    }
+  
+    .quizcategory button {
+      width: 100%;
+    }
+  }
+  
