@@ -125,7 +125,8 @@ Here are the main endpoints of the backend API:
 
 ![Quiz Page](./public/image/quiz3.png)
 ![Quiz Page](./public/image/quiz01.png)
-
+### QuizHistoy
+![Quiz Page](./public/image//quiz00001212.png)
 
 ## Conclusion
 
